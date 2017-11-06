@@ -6,7 +6,14 @@ try{
 int op1 = Integer.parseInt(args[1]);
 int op2 = Integer.parseInt(args[2]);
 
-System.out.println("Resultado: "+ op1 + " + " + op2 + " = " + (op1+op2));
+if("+".equals(args[0])){
+System.out.println(op1 + " + " + op2 + " = " + (op1+op2));
+}else if{"-".equals(args[0])){
+System.out.println(op1 + " - " + op2 + " = " + (op1-op2));
+}else{
+
+System.out.println(args[0] + ": Operación desconocida.");
+}
 
 } catch(Exception ex){
 System.out.println("Parámetros incorrectos");
